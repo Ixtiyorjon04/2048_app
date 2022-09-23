@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/finni"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/mainContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView3"
+            android:layout_width="165dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:text="2048"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.538" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="56dp"
+            android:layout_height="39dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_button"
+
+            android:gravity="center"
+            android:text="  Score  "
+
+            android:textColor="#ECE9E9"
+            app:layout_constraintEnd_toStartOf="@+id/appCompatTextView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            android:layout_width="91dp"
+            android:layout_height="39dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="Time"
+            android:textColor="@color/subtitle_color"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_time"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Chronometer
+            android:id="@+id/text_time"
+            android:layout_width="91dp"
+            android:layout_height="39dp"
+
+            android:layout_marginEnd="16dp"
+
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_score"
+            android:layout_width="57dp"
+            android:layout_height="39dp"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="0"
+
+            android:textColor="#F3EDED"
+
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/appCompatTextView"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/appCompatTextView"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/PlayButton"
+                android:text="0"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tepa"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/restart"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_button"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_restart_alt_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/home" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/home"
+        android:layout_width="58dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_button"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_home_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
